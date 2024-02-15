@@ -3,16 +3,17 @@ class Login
     
     clickAdjust()
     {
-        cy.get('#onetrust-accept-btn-handler').click()
+        cy.get('#onetrust-accept-btn-handler').click();
     }
 
     clickEntry()
     {
         cy.get('.login.d-none').click();
+        
     }
     clickAccept()
     {
-        cy.get('#onetrust-accept-btn-handler').click()
+        cy.get('#onetrust-accept-btn-handler').click();
     }
 
     setUserName(username)
@@ -27,7 +28,17 @@ class Login
 
     clickSubmit()
     {
-        cy.get('#loginModal > .modal-dialog > .modal-content > .modal-body > form > .d-grid > .btn').click()
+        cy.get('#loginModal > .modal-dialog > .modal-content > .modal-body > form > .d-grid > .btn').click();
+    }
+
+    logoutDropdown()
+    {
+        cy.get('#userDropdown').click();
+    }
+
+    logout()
+    {
+        cy.get('.dropdown-menu > .user-menu-list > .mb-0 > .dropdown-item').click();
     }
 }
 

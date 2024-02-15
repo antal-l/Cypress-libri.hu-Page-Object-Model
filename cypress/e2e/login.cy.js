@@ -8,13 +8,16 @@ describe('pageObjectModel', () => {
         cy.visit("https://www.libri.hu/")
 
         const ln = new Login();
-        ln.clickAdjust()
-        ln.clickEntry()
+        ln.clickAdjust();
+        ln.clickEntry();
         cy.wait(2000);
         ln.setUserName("antaltesztelo@gmail.com");
         cy.wait(1000);
         ln.setPassword("Tesztelo01");
-        ln.clickSubmit() 
+        ln.clickSubmit();
+        cy.wait(2000);
+        ln.logoutDropdown();
+        ln.logout(); 
     })
 
 })
