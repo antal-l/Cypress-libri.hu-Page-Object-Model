@@ -4,7 +4,7 @@ import Login from "../PageObjects/LoginPage.js";
 describe('pageObjectModel', () => {
 
 
-    it('LoginTest', () => {
+    it('LoginLogoutTest', () => {
         cy.visit("https://www.libri.hu/")
 
         const ln = new Login();
