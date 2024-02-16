@@ -5,20 +5,22 @@ class Search
         cy.get('#onetrust-accept-btn-handler').click()
     }
 
-    SearcHeader(item)
+    searchHeader(item)
     {
         cy.get('#headerSearch').type(item);
     }
 
-    SearchButton()
+    searchButton()
     {
         cy.get('#autocomplete-form > .btn').click();
     }
 
     clickItem()
     {
-        cy.get(':nth-child(2) > .product-list-item > .flex-grow-1 > .text-top > .book > .gtm-click').click();
+        cy.get(':nth-child(2) > .product-list-item > .thmb-holder > .thmb > .gtm-click > img').click();
     }
+
+    
   
 }
 

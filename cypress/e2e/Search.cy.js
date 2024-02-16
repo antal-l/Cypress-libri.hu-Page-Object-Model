@@ -9,9 +9,9 @@ describe('pageObjectModel', () => {
         const sc = new Search()
 
         sc.clickAdjust();
-        sc.SearcHeader("Steve Jobs");
+        sc.searchHeader("Steve Jobs");
         cy.wait(1000);
-        sc.SearchButton();
+        sc.searchButton();
         sc.clickItem();
 
 
